@@ -1,18 +1,13 @@
 package cn.edu.sdwu.android02.classroom.sn170507180211;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class Ch10Activity4 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.layout_ch10_4);
     }
-
-
 }
