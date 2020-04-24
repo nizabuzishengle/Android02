@@ -23,13 +23,7 @@
                     android:scheme="abc" />
             </intent-filter>
         </activity>
-        <activity android:name=".Ch10Activity2">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Ch10Activity2" />
 
         <receiver
             android:name=".MyReceiver"
@@ -49,6 +43,26 @@
             android:exported="true" />
 
         <activity android:name=".Ch12Activity1"></activity>
+
+        <service
+            android:name=".MyService2"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".MediaService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Ch12Activity2">
+
+        </activity>
+        <activity android:name=".Ch3Activity1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
