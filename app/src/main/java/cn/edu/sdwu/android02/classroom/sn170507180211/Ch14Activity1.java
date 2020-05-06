@@ -48,14 +48,14 @@ public class Ch14Activity1 extends AppCompatActivity {
 
     public void query(View view){
         //以可写方式打开数据库
-        SQLiteDatabase sqLiteDatabase=myOpenHelper.getWritableDatabase();
+        SQLiteDatabase sqLiteDatabase=myOpenHelper.getReadableDatabase();
         try{
             Cursor cursor=sqLiteDatabase.rawQuery("select * from student where stuname=?",new String[]{"tom"});
             while(cursor.moveToNext()){
                int id= cursor.getInt(cursor.getColumnIndex("id"));
                 String stuname=cursor.getString(cursor.getColumnIndex("stuname"));
                 String stutel=cursor.getString(cursor.getColumnIndex("stutel"));
-                Log.i(Ch14Activity1.class.toString(),"id:"+id ,"stuname:"+stuname ,"stutel:"+stutel);
+                Log.i(Ch14Activity1.class.toString(),"id:"+id +",stuname:"+stuname +",stutel:"+stutel);
             }
         }catch (Exception e){
             Log.e(Ch14Activity1.class.toString(),toString());
