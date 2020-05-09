@@ -29,6 +29,7 @@
             android:text="takephone"
             android:onClick="takephone"
             android:layout_height="wrap_content" />
+
     </LinearLayout>
     <!--TextureView一般用来显示内容流（content stream，比如视频，相机的预览-->
     <TextureView
